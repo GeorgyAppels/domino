@@ -175,8 +175,7 @@ export default class Table extends React.Component  {
     return 'continuing';
   }
   checkState = () => {
-    this.setState({status: this.setStatus()},
-      () => {console.log('хуууууууууууууууууй')});
+    this.setState({status: this.setStatus()});
     console.log(`The game is ${this.setStatus()}.`);
     console.log(`Chain state: ${this.showDices(this.chain)}. Chain length is ${this.chain.length}. it's player ${this.currentPlayer + 1}'s turn.
     He's gonna search for ${this.chain[0]} and ${this.chain[this.chain.length - 1]}.`);
